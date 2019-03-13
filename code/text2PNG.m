@@ -24,6 +24,7 @@ else
     output = bg1;
 end
 %imshow(textBackground);
+lighter = 90;
 
 i = topLeftX;
 j = topLeftY;
@@ -32,9 +33,9 @@ for i=topLeftX+1:botRightX
     for j=topLeftY+1:botRightY
         if (textBackground(i-topLeftX,j-topLeftY,1)==0 && ...
                 bg_light(i,j,1)<50 && bg_light(i,j,2)<50 && bg_light(i,j,3)<50 )
-            output(i,j,1)=light(i,j,1);
-            output(i,j,2)=light(i,j,2);
-            output(i,j,3)=light(i,j,3);
+            output(i,j,1)=light(i,j,1)+lighter;
+            output(i,j,2)=light(i,j,2)+lighter;
+            output(i,j,3)=light(i,j,3)+lighter;
         end        
     end
 end
