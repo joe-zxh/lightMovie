@@ -4,7 +4,7 @@
 模拟大楼的灯光拼图的效果
 
 ### 用法
-在code目录的input.txt中输入想要拼出的字。
+1. 在code目录的input.txt中输入想要拼出的字。
 第1行为字幕(字幕长度每次不得超过3个字)，第2行为字幕持续的时间(秒)。例如：
 ```
 每天
@@ -14,6 +14,15 @@
 第一句
 0.6943
 ```
+
+2. 建立以下文件夹：  
+./outputVideo  
+./code/outputAVI  
+./code/outputGIF  
+
+3. 运行./code/main.m  
+最后会输出视频文件./outputVideo/output.avi  
+以及 gif文件./code/movefig.gif
 
 ### 例子
 <img src="./code/movefig.gif" height="360" width="640">  
